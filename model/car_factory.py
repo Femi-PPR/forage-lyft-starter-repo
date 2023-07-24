@@ -14,7 +14,7 @@ class CarFactory():
 		return Car(WilloughbyEngine(current_mileage, last_service_mileage), SpindlerBattery(current_date, last_service_date))
 
 	def create_palindrome(self, current_date, last_service_date, warning_light_is_on):
-		return Car(SternmanEngine(current_mileage, last_service_mileage), SpindlerBattery(current_date, last_service_date))
+		return Car(SternmanEngine(warning_light_is_on), SpindlerBattery(current_date, last_service_date))
 
 	def create_rorschach(self, current_date, last_service_date, current_mileage, last_service_mileage):
 		return Car(WilloughbyEngine(current_mileage, last_service_mileage), NubbinBattery(current_date, last_service_date))
