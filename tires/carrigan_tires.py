@@ -5,4 +5,4 @@ class CarriganTires(Tires):
 		self.tire_wear = tire_wear
 
 	def needs_service(self):
-		return any(x > 0.9 for x in self.tire_wear)
+		return any(x >= 0.9 for x in self.tire_wear)

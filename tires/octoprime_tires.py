@@ -5,4 +5,4 @@ class OctoprimeTires(Tires):
 		self.tire_wear = tire_wear
 
 	def needs_service(self):
-		return sum(self.tire_wear) > 3
+		return sum(self.tire_wear) >= 3
